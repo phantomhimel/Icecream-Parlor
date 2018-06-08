@@ -6,21 +6,21 @@
   # DataBase and Table
   
   CREATE DATABASE Icecream_parlor
-  
-  create table Product_table
-  (
-  Flavour_name varchar (25) not null primary key,<br>
-  price float not null
-  )
-  <br>
-  create table Selling_table
-  (
+  <br><br><br>
+  create table Product_table<br>
+  (<br>
+  Flavour_name varchar (25) not null primary key,<br><br>
+  price float not null<br>
+  )<br>
+  <br><br><br>
+  create table Selling_table<br>
+  (<br>
   Flavour_name varchar (25) not null foreign key references Product_table( Flavour_name), <br>
   Stuff_id int  foreign key references Stuff_info (Stuff_id), <br>
   Quantity int,<br>
   Bill float<br>
-  )
-<br>
+  )<br>
+<br><br><br>
   create table Stuff_info<br>
   (
   Stuff_id int  identity (1001,1) primary key, <br>
